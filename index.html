@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Typing Speed Test</h1>
+      <button id="startBtn">Start Test</button>
+      <button id="resetBtn">Reset</button>
+    </header>
+
+    <section class="card">
+      <h2>Type this text:</h2>
+      <div id="passage" class="passage"></div>
+    </section>
+
+    <section class="card">
+      <textarea id="inputArea" disabled></textarea>
+      <div class="stats">
+        <p>Time: <span id="time">60</span>s</p>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">0</span>%</p>
+      </div>
+      <button id="finishBtn">Finish</button>
+    </section>
+
+    <section id="results" class="card" hidden>
+      <h3>Results</h3>
+      <p>WPM: <span id="finalWpm">0</span></p>
+      <p>Accuracy: <span id="finalAcc">0</span>%</p>
+      <input id="nameInput" placeholder="Enter your name">
+      <button id="downloadCert">Download Certificate</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
